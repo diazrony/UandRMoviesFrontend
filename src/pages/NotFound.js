@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Header = () => {
+export const NotFound = () => {
     return (
         <div>
-            Header
+            Not Found
         </div>
     )
 }

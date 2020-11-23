@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Header = () => {
+export const CreateMovie = () => {
     return (
         <div>
-            Header
+            CreateMovie
         </div>
     )
 }

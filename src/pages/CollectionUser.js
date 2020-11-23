@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Header = () => {
+export const CollectionUser = () => {
     return (
         <div>
-            Header
+            CollectionUser
         </div>
     )
 }
