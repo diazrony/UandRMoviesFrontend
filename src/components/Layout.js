@@ -4,9 +4,11 @@ import './styles/Layout.css';
 
 export const Layout = (props) => {
     return (
-        <React.Fragment>
-            <Header></Header>
-            {props.children}
-        </React.Fragment>
+        <div className="layout">
+            <React.Fragment>
+                <Header></Header>
+                {props.children}
+            </React.Fragment>
+        </div>     
     )
 }
