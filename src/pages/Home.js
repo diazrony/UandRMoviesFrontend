@@ -1,7 +1,9 @@
 import React from 'react';
+import '../components/styles/Home.css'
 
 export const Home = () => {
     return (
-        <div></div>
+        <div className="body">
+        </div>
     );
 }
