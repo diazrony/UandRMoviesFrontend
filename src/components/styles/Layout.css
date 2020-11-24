@@ -1,5 +1,75 @@
+*{
+
+}
+
 .body{
-    background-color: salmon;
     width: 100%;
-    height: 100vh;
+    height: 78vh;
+    padding-top: 10vh;
+    background-image: url(https://image.freepik.com/free-vector/movie-cinema-icons-seamless-pattern-with-doodle-style-white-background_7130-940.jpg);
+}
+
+.container{
+    background-color: black;
+    width: 35%;
+    height: 70vh;
+    margin-left: 27em;
+    border-radius: 20px;
+    opacity: 95%;
+}
+
+.container h1{
+    color: white;
+    background-color: black;
+    height: 11vh;
+    border-radius: 20px 20px 0px 0px;
+    margin-left: 19%;
+    font-size: 50px;
+}
+
+.container img{
+    margin-left: 11em;
+    background-color: black;
+    margin-bottom: 4vh;
+}
+
+.usuario{
+    width: 20em;
+    margin-left: 22%;
+    height: 5vh;
+    background-color: #333333;
+    border: solid black 1px;
+    border-radius: 5px;
+    color: white;
+    opacity: 95%;
+    text-indent: 10px;
+}
+
+.contraseña{
+    width: 20em;
+    margin-top: 8%;
+    margin-left: 22%;
+    height: 5vh;
+    background-color: #333333;
+    border: solid black 1px;
+    border-radius: 5px;
+    color: white;
+    opacity: 95%;
+    text-indent: 4px;
+}
+
+.boton{
+    width: 20em;
+    margin-top: 8%;
+    margin-left: 22%;
+    height: 5vh;
+    background-color: white;
+    border: solid white 1px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    color: white;
+    background-color: black;
 }
