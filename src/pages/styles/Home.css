@@ -1,44 +1,48 @@
 .section{
     width: 100%;
-    height: 88.6vh;
-    background-color: brown;
-    display: flex;
-    flex-flow: column wrap;
     background-image: url(https://media.istockphoto.com/vectors/cinema-pattern-seamless-background-with-symbols-of-cinema-and-films-vector-id1055864932?k=6&m=1055864932&s=170667a&w=0&h=2x4McvtDKJXcpYpjEyhYypLOKnHTZYyCbif_fLfPVJA=);
-    align-items: center;
-    justify-content: center;
 }
-
+.container-movies {
+    display: grid;
+    grid-gap: 20px;
+    grid-row: 10px;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 5% 0 5%;
+    text-align: center;
+    padding-top: 5%;
+}
 .pelicula{
-    width: 13%;
-    height: 40vh;
     background-color: black;
-    margin: 1%;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
-
+.pelicula-img-container {
+    width: 100%;
+    height: 60%;
+}
 .pelicula img{
     width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
+    height: 100%;
 }
 
-.pelicula img:hover{
-    opacity: 60%;
-    box-shadow: 10px 5px 5px black;
+.pelicula:hover{
+    opacity: 80%;
+    /* box-shadow: 10px 5px 5px black; */
 }
-
 @media (min-width: 0) and (max-width: 767px) {
-    .section{
-        width: 100%;
-        height: 89vh;
-        display: flex;
-        flex-flow: column wrap;
-        overflow: auto;
+    .container-movies {
+        grid-template-columns: auto auto auto;
     }
-
-    .pelicula{
-        width: 31%;
+}
+@media (min-width: 0) and (max-width: 650px) {
+    .container-movies {
+        grid-template-columns: auto auto ;
+    }
+}
+@media (min-width: 0) and (max-width: 480px) {
+    .container-movies {
+        grid-template-columns: auto;
     }
 }
