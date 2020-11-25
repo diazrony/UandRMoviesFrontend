@@ -1,0 +1,116 @@
+
+.sectionImg{
+    width: 100%;
+    height: 88.6vh;
+    background-image: url(https://image.freepik.com/free-vector/cinema-icons-pattern-seamless_71374-289.jpg);
+    display: flex;
+}
+
+.containerInfo{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionPeli{
+    width: 40%;
+    height: 88.6vh;
+    background-image: url(https://image.freepik.com/free-vector/cinema-icons-pattern-seamless_71374-289.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Peli{
+    width: 80%;
+    height: 80vh;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.sectionInfo{
+    width: 90%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 95%;
+}
+
+.titulo{
+    width: 93%;
+    height: 10vh;
+    font-size: 45px;
+    margin: 1%;
+    color: white;
+}
+
+
+
+.año{
+    width: 93%;
+    height: 5vh;
+    font-size: 20px;
+    margin: 1%;
+    color: white;
+}
+
+.sipnosis{
+    width: 93%;
+    height: 18vh;
+    margin: .5%;
+    color: white;
+}
+
+.estrellas{
+    width: 93%;
+    height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.estrella{
+    width: 10%;
+    height: 10vh;
+    font-size: 60px;
+    color: white;
+}
+
+.estrella:hover{
+    color: yellow;
+}
+
+.botones{
+    width: 93%;
+    height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.botones button{
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: yellow;
+    border: solid black 1px;
+    font-size: 20px;
+    color: black;
+}
+
+.botonInfo{
+    width: 30%;
+    height: 10vh;
+    margin: 1%;
+}
+
+.botones button:hover{
+    background-color: darkgoldenrod;
+}
+
+

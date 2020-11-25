@@ -20,7 +20,7 @@ function App() {
           <Route exact  path="/collection" component={CollectionUser} />
           <Route exact  path="/admin" component={HomeAdmin} />
           <Route exact  path="/admin/create-movie" component={CreateMovie} />
-          <Route component={NotFound} />
+          <Route component={Movie} />
         </Switch>
       </Layout>
     </BrowserRouter>
