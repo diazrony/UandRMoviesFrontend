@@ -113,4 +113,46 @@
     background-color: darkgoldenrod;
 }
 
+@media (min-width: 0) and (max-width: 771px) {
+    .sectionPeli{
+        width: 50%;
+    }
+    .año{
+        font-size: 18px;
+    }
+    .sipnosis{
+        font-size: 10px;
+    }
+    .estrella{
+        width: 15%;
+        
+    }
+    .botonInfo{
+        width: 40%;
+        margin-top: 5%;
+    }
+}
+@media (min-width: 0) and (max-width: 600px) {
+    .sectionPeli{
+        width: 0;
+        height: 0;
+    }
 
+    .containerInfo{
+        width: 100%;
+    }
+
+    .sectionInfo{
+        width: 80%;
+    }
+}
+@media (min-width: 0) and (max-width: 346px) {
+    .estrella{
+        width: 18%;
+        font-size: 40px;
+        margin-top: 7%;
+    }
+}
+@media (min-width: 0) and (max-width: 490px) {
+
+}
