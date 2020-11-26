@@ -12,12 +12,23 @@
     padding-top: 5%;
 }
 .pelicula{
-    background-color: black;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     color: white;
+    width: 80%;
 }
+
+.pelicula h3{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.pelicula p{
+    background-color: black;
+    border-radius: 20px;
+}
+
 .pelicula-img-container {
     width: 100%;
     height: 60%;
