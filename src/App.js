@@ -9,6 +9,7 @@ import { Movie } from './pages/Movie';
 import { NotFound } from './pages/NotFound';
 import 'bulma/css/bulma.css'
 import {Register} from "./pages/Register";
+import {Movies} from "./pages/Movies";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
           <Route exact  path="/" component={Home} />
           <Route exact  path="/login" component={Login} />
           <Route exact  path="/register" component={Register} />
+          <Route exact  path="/movies" component={Movies} />
           <Route exact  path="/movie/:id" component={Movie} />
           <Route exact  path="/collection" component={CollectionUser} />
           <Route exact  path="/admin" component={HomeAdmin} />

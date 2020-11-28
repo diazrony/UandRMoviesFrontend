@@ -1,10 +1,9 @@
 import React from 'react'
-import {Link} from "react-router-dom";
 
-export const LoginComponent = (props) => {
+export const RegisterComponent = (props) => {
     return (
         <div>
-            <h1 className="is-size-1" ><b>Login</b></h1>
+            <h1 className="is-size-1" ><b>Register</b></h1>
             <form>
                 <div className="field">
                     <label className="label">Username</label>
@@ -18,13 +17,10 @@ export const LoginComponent = (props) => {
                         <input className="input" type="email" placeholder="Email input" />
                     </div>
                 </div>
-                <p className="help is-danger">This email is invalid</p>
+                <p className="help is-danger">User exist</p>
                 <div className="field is-grouped">
                     <div className="control">
-                        <button type="submit" className="button is-primary is-large ">Login</button>
-                    </div>
-                    <div className="control">
-                        <Link to="/register" className="button is-primary is-large ">Register</Link>
+                        <button type="submit" className="button is-primary is-large ">Register</button>
                     </div>
                 </div>
             </form>

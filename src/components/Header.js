@@ -31,6 +31,9 @@ export const Header = () => {
                         <Link to='/' className="navbar-item">
                             Home
                         </Link>
+                        <Link to='/movies' className="navbar-item">
+                            Movies
+                        </Link>
                         <Link to='/collection' className="navbar-item">
                             Colletion
                         </Link>
