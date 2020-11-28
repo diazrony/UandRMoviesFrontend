@@ -10,7 +10,7 @@ export const Header = () => {
                     <Link to='/' className="navbar-item">
                         <h3> <b>UandRMovies</b> </h3>
                     </Link>
-                    <Link to="/"
+                    <button
                         onClick={() => {
                             setisActive(!isActive);
                         }}
@@ -23,7 +23,7 @@ export const Header = () => {
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
-                    </Link>
+                    </button>
                 </div>
 
                 <div id="navbarBasicExample"  className={`navbar-menu ${isActive ? "is-active" : ""}`}>

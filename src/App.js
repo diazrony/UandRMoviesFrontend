@@ -10,6 +10,7 @@ import { NotFound } from './pages/NotFound';
 import 'bulma/css/bulma.css'
 import {Register} from "./pages/Register";
 import {Movies} from "./pages/Movies";
+import {ListMovie} from "./pages/admin/ListMovie";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
           <Route exact  path="/collection" component={CollectionUser} />
           <Route exact  path="/admin" component={HomeAdmin} />
           <Route exact  path="/admin/create-movie" component={CreateMovie} />
+          <Route exact  path="/admin/list-movie" component={ListMovie} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

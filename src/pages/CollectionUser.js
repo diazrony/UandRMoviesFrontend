@@ -37,7 +37,6 @@ export const CollectionUser = () => {
                         </div>
                     )
                 })}
-
             </div>
         </div>
     )
