@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
 import { Layout } from './components/Layout';
 import { CreateMovie } from './pages/admin/CreateMovie';
 import { HomeAdmin } from './pages/admin/HomeAdmin';
@@ -8,7 +7,8 @@ import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Movie } from './pages/Movie';
 import { NotFound } from './pages/NotFound';
-
+import 'bulma/css/bulma.css'
+import {Register} from "./pages/Register";
 function App() {
   return (
     <BrowserRouter>
@@ -16,11 +16,12 @@ function App() {
         <Switch>
           <Route exact  path="/" component={Home} />
           <Route exact  path="/login" component={Login} />
+          <Route exact  path="/register" component={Register} />
           <Route exact  path="/movie/:id" component={Movie} />
           <Route exact  path="/collection" component={CollectionUser} />
           <Route exact  path="/admin" component={HomeAdmin} />
           <Route exact  path="/admin/create-movie" component={CreateMovie} />
-          <Route component={Movie} />
+          <Route component={NotFound} />
         </Switch>
       </Layout>
     </BrowserRouter>

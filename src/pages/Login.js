@@ -1,17 +1,17 @@
 import React from 'react'
-import user from '../img/user.png';
-import './styles/Login.css';
+import './styles/General.css'
+import authentication from "../img/svg/authentication.svg";
+import {LoginComponent} from "../components/LoginComponent";
 export const Login = () => {
     return (
-            <div className="login">
-                <div className="card">
-                <form className="card-form">
-                    <h1>Inicia Sesión</h1>
-                    <img src={user}></img>
-                    <input className="input-login" type="text" placeholder="Ingresa tu usuario"></input>
-                    <input className="input-login" type="password" placeholder="  Ingresa tu contraseña"></input>
-                    <button className="boton" type="submit">Iniciar Sesión</button>
-                </form>
+            <div className="uandr-login">
+                <div className="columns">
+                    <div className="column">
+                        <LoginComponent/>
+                    </div>
+                    <div className="column  has-text-centered">
+                        <img className="hlogo" src={authentication} />
+                    </div>
                 </div>
             </div>
     )
