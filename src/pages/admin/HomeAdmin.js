@@ -1,6 +1,6 @@
 import React from 'react'
 import createMovieL  from '../../img/svg/createMovie.svg';
-import listMovieL  from '../../img/svg/adminListMovie.svg';
+//import listMovieL  from '../../img/svg/adminListMovie.svg';
 
 import {Link} from "react-router-dom";
 
@@ -31,7 +31,7 @@ export const HomeAdmin = () => {
                     <div className="card">
                         <div className="card-image">
                             <figure className="image is-16by9">
-                                <img src={listMovieL} alt="Placeholder image"/>
+                                <img src="" alt="Placeholder image"/>
                             </figure>
                         </div>
                         <div className="card-content">
