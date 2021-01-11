@@ -1,8 +1,27 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import { GoogleLogout } from 'react-google-login';
 export const Header = () => {
     const [isActive, setisActive] = React.useState(false);
-
+    const [islogin, setIsLogin] = React.useState(false);
+    const [userS, setuserS] = React.useState({})
+    const logoutGoogle = () => {
+        window.localStorage.removeItem('token')
+        window.location.href = '/'
+    }
+    let intervalLogin = setInterval(() => {
+        let response = JSON.parse(window.localStorage.getItem('token')) 
+        if(response !== undefined && response) {
+            setIsLogin(true)
+            let {user} = JSON.parse(window.localStorage.getItem('token'))
+            setuserS(user)
+        }else {
+            setIsLogin(false)
+        }
+        if(islogin) {
+            clearInterval(intervalLogin);
+        }
+    }, 3000 );
     return (
         <div>
             <nav className="navbar container" role="navigation" aria-label="main navigation">
@@ -28,28 +47,45 @@ export const Header = () => {
 
                 <div id="navbarBasicExample"  className={`navbar-menu ${isActive ? "is-active" : ""}`}>
                     <div className="navbar-start">
-                        <Link to='/' className="navbar-item">
+                        <Link onClick={() => {setisActive(!isActive)}} to='/' className="navbar-item">
                             Home
                         </Link>
-                        <Link to='/movies' className="navbar-item">
+                        <Link onClick={() => {setisActive(!isActive)}} to='/movies' className="navbar-item">
                             Movies
                         </Link>
-                        <Link to='/collection' className="navbar-item">
+                        {islogin && (
+                            <Link onClick={() => {setisActive(!isActive)}} to='/collection' className="navbar-item">
                             Colletion
-                        </Link>
-                        <Link to='/admin' className="navbar-item">
-                            Admin
-                        </Link>
+                            </Link>
+                        )}
+                        {islogin && (
+                            <Link onClick={() => {setisActive(!isActive)}} to='/admin' className="navbar-item">
+                                Admin
+                            </Link>
+                        )}
+                        
+                        
                     </div>
                     <div className="navbar-end">
-                        <div className="navbar-item">
+                        <div className="navbar-item"> 
                             <div className="buttons">
-                                <Link to="register" className="button is-primary">
-                                    <strong>Sign up</strong>
-                                </Link>
-                                <Link to="login" className="button is-light">
-                                    Log in
-                                </Link>
+                                {islogin && (
+                                    <h1 className='button is-primary' > {userS.name} </h1>
+                                )}
+                                {islogin && (
+                                    <p className="control">
+                                        <GoogleLogout
+                                        clientId="486105028590-uudenu4qbnencsiec6tb67fpmov3r0jj.apps.googleusercontent.com"
+                                        buttonText="Cerrar Sessión"
+                                        onLogoutSuccess={logoutGoogle}
+                                        />
+                                    </p>
+                                )}
+                                {!islogin && (
+                                    <Link to="login" className="button is-primary">
+                                    Login
+                                    </Link>
+                                )}
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 export const LoginComponent = (props) => {
     return (
         <div>
-            <h1 className="is-size-1" ><b>Login</b></h1>
             <form>
                 <div className="field">
                     <label className="label">Username</label>
