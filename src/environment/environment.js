@@ -1,2 +1,2 @@
-export let urlGeneral = 'http://localhost:3001'
+export let urlGeneral = 'https://apiudlrdandug.herokuapp.com'
 
