@@ -16,6 +16,5 @@ export const Register = (props) => {
                 </div>
             </div>
         </div>
-
     )
 }
